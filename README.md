@@ -1,6 +1,5 @@
 # XYScanNet 
 
-```
 ## Citation
 ```
 @article{liu2024xyscannet,
