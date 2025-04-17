@@ -9,7 +9,7 @@
 
 Official implementation of our **CVPR Workshop NTIRE 2025** accepted paper:
 
-> **XYScanNet: An State Space Model for Single Image Deblurring**  
+> **XYScanNet: A State Space Model for Single Image Deblurring**  
 > *Hanzhou Liu, Chengkai Liu, Jiacong Xu, Peng Jiang, Mi Lu*  
 > [arXiv 2412.10338](https://arxiv.org/abs/2412.10338)
 
@@ -44,8 +44,6 @@ hances KID by 17% compared to the nearest competitor.
 ## 🚀 Highlights
 
 - ✅ **Accepted at CVPR 2025 - NTIRE Workshop**
-- 📐 Direction-aware motion modeling using independent X- and Y-scan branches.
-- 🔬 Interpretability through disentangled motion estimations.
 - 📈 Competitive results on GoPro, HIDE, and RealBlur datasets.
 
 ---
@@ -53,6 +51,19 @@ hances KID by 17% compared to the nearest competitor.
 ## 📁 Code & Dataset
 
 Coming soon! Stay tuned.
+
+---
+
+## ✅ TODO
+
+- [ ] 🔓 **Release Pretrained Models**
+- [ ] 🔄 **Extend to Other Restoration Tasks**
+  - [ ] Image Denoising
+  - [ ] Super-Resolution
+  - [ ] Compression Artifact Removal
+- [ ] 📊 **Complexity Analysis**
+  - [ ] FLOPs and Runtime Benchmarks
+  - [ ] Model Scaling Trend
 
 ---
 
