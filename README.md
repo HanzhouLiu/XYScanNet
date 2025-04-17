@@ -1,10 +1,11 @@
-# XYScanNet: An State Space Model for Single Image Deblurring
+# XYScanNet: A State Space Model for Single Image Deblurring
 
 <p align="center">
   <img src="https://img.shields.io/badge/CVPR--NTIRE%202025-Accepted-brightgreen.svg">
   <img src="https://img.shields.io/badge/arXiv-2412.10338-blue">
 </p>
 
+[![NTIRE](https://img.shields.io/badge/CVPR--NTIRE%202025-Accepted-brightgreen.svg)](https://arxiv.org/abs/2412.10338)
 [![arXiv](https://img.shields.io/badge/arXiv-2412.10338-b31b1b.svg)](https://arxiv.org/abs/2412.10338)
 
 Official implementation of our **CVPR Workshop NTIRE 2025** accepted paper:
