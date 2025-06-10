@@ -33,7 +33,7 @@ if __name__ == '__main__':
         config = yaml.safe_load(cfg)
     blur_path = '/scratch/user/hanzhou1996/datasets/deblur/GOPRO_/test/blur'
     out_path = os.path.join('results', args.job_name, 'images')
-    weights_path = os.path.join('results', args.job_name, 'models', 'final_{}.pth'.format(config['experiment_desc']))  # change the model name to test different phases: final/best
+    weights_path = os.path.join('results', args.job_name, 'models', 'best_{}.pth'.format(config['experiment_desc']))  # change the model name to test different phases: final/best
     if not os.path.isdir(out_path):
         os.mkdir(out_path)
     model = get_generator(config['model'])
