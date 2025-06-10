@@ -28,17 +28,69 @@ To overcome these issues, we propose a novel slice-and-scan strategy that altern
 
 ---
 
+## Training on GoPro
+Download "[GoPro](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" dataset into './datasets'
+for example: './datasets/GoPro'. Note: we say the blur images is A and the sharp images is B, e.g., ./GOPRO/test/sharp <-> .GOPRO/test/testB. </br>
+
+Download "[VGG19 Pretrained Weights](https://drive.google.com/file/d/1r2_clZ02-ai6xM7EOHW9APqY9IxkPYsS/view?usp=drive_link)" into './models',
+which is used to calculate ContrastLoss.  </br>
+
+**We train our XYScanNet in two stages:** </br>
+* We pre-train XYScanNet for 4000 epochs with patch size 252x252 </br> 
+* Run the following command 
+```
+python train_XYScanNet_stage1.py --job_name xyscannetp_gopro
+```
+
+* After 4000 epochs, we keep training XYScanNet for 4000 epochs with patch size 320x320 </br>
+* Run the following command 
+```
+python train_XYScanNet_stage2.py --job_name xyscannetp_gopro
+```
+
+## Training on RealBlur
+I forgot the training details on RealBlur datasets. As much as I can remember, I used the gopro-trained model (final .pth in stage 1) and fine-tuned it based on the provided config file.
+
+---
+
+## Testing
+For reproducing our results on GoPro and HIDE datasets, download "[DeblurDiNATL.pth](https://drive.google.com/file/d/1VT7dpP550b83YZ0LjfmGA5t0nEA32EEs/view?usp=sharing)"
+
+**For testing on GoPro dataset** </br>
+* Download "[GoPro](https://drive.google.com/file/d/1Fp0MuEwFlzT_NKAFjr3SpuQl3Sm0cFYA/view?usp=sharing)" full dataset or test set into './datasets' (For example: './datasets/GoPro/test') </br>
+* Run the following command
+```
+python predict_GoPro_test_results.py --job_name xyscannetp_gopro
+```
+**For testing on HIDE dataset** </br>
+* Download "[HIDE](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" into './datasets' </br>
+* Run the following command
+```
+python predict_HIDE_results.py --job_name xyscannetp_gopro
+```
+**For testing on RealBlur test sets** </br>
+* Download "[RealBlur_J](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" and "[RealBlur_R](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" into './datasets' </br>
+* Run the following command
+```
+python predict_RealBlur_J_test_results.py --job_name xyscannetp_realj
+```
+```
+python predict_RealBlur_R_test_results.py --job_name xyscannetp_realr
+```
+
+---
+
 ## 📦 Pretrained Models and Visual Results
 
 The following table lists our released pretrained models and qualitative visual examples. All models are available from Google Drive.
 
 | Dataset         | Trained On       | Model Weights                                                                 | Sample Results Preview |
 |-----------------|------------------|-------------------------------------------------------------------------------|-------------------------|
-| **GoPro**       | GoPro            | [Download](https://drive.google.com/drive/folders/10nu5WiA05Dv4q12A0XiISGMmXd6gyiYE?usp=drive_link) | ![GoPro Sample](images/gopro_sample.png) |
-| **HIDE**        | GoPro            | [Download](https://drive.google.com/drive/folders/10nu5WiA05Dv4q12A0XiISGMmXd6gyiYE?usp=drive_link) | ![HIDE Sample](images/hide_sample.png)  |
-| **RWBI**        | GoPro            | [Download](https://drive.google.com/drive/folders/10nu5WiA05Dv4q12A0XiISGMmXd6gyiYE?usp=drive_link) | ![RWBI Sample](images/rwbi_sample.png)  |
-| **RealBlur_J**  | RealBlur_J       | [Download](https://drive.google.com/drive/folders/1LEBIHQpqZAzudPwkHVQiVkrTwI4jtJOq?usp=drive_link) | ![RealBlurJ Sample](images/realblurj_sample.png) |
-| **RealBlur_R**  | RealBlur_R       | [Download](https://drive.google.com/drive/folders/10TXboH85HMfp_9TjBLm3Xw-jN1Q-Z9Bi?usp=drive_link) | ![RealBlurR Sample](images/realblurr_sample.png) |
+| **GoPro**       | GoPro            | [Download](https://drive.google.com/drive/folders/10nu5WiA05Dv4q12A0XiISGMmXd6gyiYE?usp=drive_link) | ![GoPro Sample](https://drive.google.com/file/d/1lQlRzjhcG_8L4Ikr2COS_qjVObhaKOZV/view?usp=drive_link) |
+| **HIDE**        | GoPro            | [Download](https://drive.google.com/drive/folders/10nu5WiA05Dv4q12A0XiISGMmXd6gyiYE?usp=drive_link) | ![HIDE Sample](https://drive.google.com/file/d/1_3MOt1gGR9aQ8bp3yceyDwhEoOD1LmH6/view?usp=drive_link)  |
+| **RWBI**        | GoPro            | [Download](https://drive.google.com/drive/folders/10nu5WiA05Dv4q12A0XiISGMmXd6gyiYE?usp=drive_link) | ![RWBI Sample](https://drive.google.com/file/d/1P_GXhmIdGvs6dB3h_7SVuDXpA7tCDE3G/view?usp=drive_link)  |
+| **RealBlur_J**  | RealBlur_J       | [Download](https://drive.google.com/drive/folders/1LEBIHQpqZAzudPwkHVQiVkrTwI4jtJOq?usp=drive_link) | ![RealBlurJ Sample](https://drive.google.com/file/d/1B3J7IEj7wPTc0dhtzDkinPmxJ5mEl1gt/view?usp=drive_link) |
+| **RealBlur_R**  | RealBlur_R       | [Download](https://drive.google.com/drive/folders/10TXboH85HMfp_9TjBLm3Xw-jN1Q-Z9Bi?usp=drive_link) | ![RealBlurR Sample](https://drive.google.com/file/d/12K0o9g7TX0m2urrPBHB31603i7t-ZfbH/view?usp=drive_link) |
 
 > 📌 *Please make sure the `images/` directory contains the corresponding sample images for proper rendering on GitHub.*
 
@@ -48,6 +100,7 @@ The following table lists our released pretrained models and qualitative visual 
 
 - [x] **Release Pretrained Models**
 - [x] **Release Test Images**
+- [ ] **Release Training Logs**
 - [ ] **Extend to Other Restoration Tasks**
   - [ ] Image Denoising
   - [ ] Super-Resolution
