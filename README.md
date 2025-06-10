@@ -25,7 +25,6 @@ To overcome these issues, we propose a novel slice-and-scan strategy that altern
 - 🔄 Novel slice-and-scan scanning for spatially aware state-space modeling
 - ⚡ Lightweight Vision State Space Module (VSSM) designed for efficiency
 - 📈 Competitive results on GoPro, HIDE, RealBlur_J/R, and RWBI datasets
-- 🎯 17% improvement in KID over the best competing method
 
 ---
 
