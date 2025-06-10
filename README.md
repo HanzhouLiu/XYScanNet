@@ -30,7 +30,7 @@ To overcome these issues, we propose a novel slice-and-scan strategy that altern
 
 ## 📦 Pretrained Models and Visual Results
 
-The following table lists our released pretrained models and qualitative visual examples. All models are available from this [Google Drive folder](https://drive.google.com/drive/folders/14Cn4ScqncT0q3bARNdczfRI51W0Djmyp?usp=drive_link).
+The following table lists our released pretrained models and qualitative visual examples. All models are available from Google Drive.
 
 | Dataset         | Trained On       | Model Weights                                                                 | Sample Results Preview |
 |-----------------|------------------|-------------------------------------------------------------------------------|-------------------------|
