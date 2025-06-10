@@ -27,6 +27,12 @@ To overcome these issues, we propose a novel slice-and-scan strategy that altern
 - Competitive results on GoPro, HIDE, RealBlur_J/R, and RWBI datasets
 
 ---
+## Environment Setup
+To do!
+Please refer to 
+[Stripformer](https://github.com/pp00704831/Stripformer-ECCV-2022-) and [DeblurDiNAT](https://github.com/HanzhouLiu/DeblurDiNAT).
+
+---
 
 ## Training on GoPro
 Download "[GoPro](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" dataset into './datasets'
@@ -102,7 +108,9 @@ The following table lists our released pretrained models and qualitative visual 
 
 - [x] **Release Pretrained Models**
 - [x] **Release Test Images**
-- [ ] **Release Training Logs**
+- [x] **Release Training Logs**
+- [ ] **Release Environment Setup**
+- [ ] **Double Check whether shared model versions match with the paper**
 - [ ] **Extend to Other Restoration Tasks**
   - [ ] Image Denoising
   - [ ] Super-Resolution
