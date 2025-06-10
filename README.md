@@ -86,11 +86,11 @@ The following table lists our released pretrained models and qualitative visual 
 
 | Dataset         | Trained On       | Model Weights                                                                 | Sample Results Preview |
 |-----------------|------------------|-------------------------------------------------------------------------------|-------------------------|
-| **GoPro**       | GoPro            | [Download](https://drive.google.com/drive/folders/10nu5WiA05Dv4q12A0XiISGMmXd6gyiYE?usp=drive_link) | ![GoPro Sample](https://drive.google.com/file/d/1lQlRzjhcG_8L4Ikr2COS_qjVObhaKOZV/view?usp=drive_link) |
-| **HIDE**        | GoPro            | [Download](https://drive.google.com/drive/folders/10nu5WiA05Dv4q12A0XiISGMmXd6gyiYE?usp=drive_link) | ![HIDE Sample](https://drive.google.com/file/d/1_3MOt1gGR9aQ8bp3yceyDwhEoOD1LmH6/view?usp=drive_link)  |
-| **RWBI**        | GoPro            | [Download](https://drive.google.com/drive/folders/10nu5WiA05Dv4q12A0XiISGMmXd6gyiYE?usp=drive_link) | ![RWBI Sample](https://drive.google.com/file/d/1P_GXhmIdGvs6dB3h_7SVuDXpA7tCDE3G/view?usp=drive_link)  |
-| **RealBlur_J**  | RealBlur_J       | [Download](https://drive.google.com/drive/folders/1LEBIHQpqZAzudPwkHVQiVkrTwI4jtJOq?usp=drive_link) | ![RealBlurJ Sample](https://drive.google.com/file/d/1B3J7IEj7wPTc0dhtzDkinPmxJ5mEl1gt/view?usp=drive_link) |
-| **RealBlur_R**  | RealBlur_R       | [Download](https://drive.google.com/drive/folders/10TXboH85HMfp_9TjBLm3Xw-jN1Q-Z9Bi?usp=drive_link) | ![RealBlurR Sample](https://drive.google.com/file/d/12K0o9g7TX0m2urrPBHB31603i7t-ZfbH/view?usp=drive_link) |
+| **GoPro**       | GoPro            | [Download](https://drive.google.com/drive/folders/10nu5WiA05Dv4q12A0XiISGMmXd6gyiYE?usp=drive_link) | [GoPro Sample](https://drive.google.com/file/d/1lQlRzjhcG_8L4Ikr2COS_qjVObhaKOZV/view?usp=drive_link) |
+| **HIDE**        | GoPro            | [Download](https://drive.google.com/drive/folders/10nu5WiA05Dv4q12A0XiISGMmXd6gyiYE?usp=drive_link) | [HIDE Sample](https://drive.google.com/file/d/1_3MOt1gGR9aQ8bp3yceyDwhEoOD1LmH6/view?usp=drive_link)  |
+| **RWBI**        | GoPro            | [Download](https://drive.google.com/drive/folders/10nu5WiA05Dv4q12A0XiISGMmXd6gyiYE?usp=drive_link) | [RWBI Sample](https://drive.google.com/file/d/1P_GXhmIdGvs6dB3h_7SVuDXpA7tCDE3G/view?usp=drive_link)  |
+| **RealBlur_J**  | RealBlur_J       | [Download](https://drive.google.com/drive/folders/1LEBIHQpqZAzudPwkHVQiVkrTwI4jtJOq?usp=drive_link) | [RealBlurJ Sample](https://drive.google.com/file/d/1B3J7IEj7wPTc0dhtzDkinPmxJ5mEl1gt/view?usp=drive_link) |
+| **RealBlur_R**  | RealBlur_R       | [Download](https://drive.google.com/drive/folders/10TXboH85HMfp_9TjBLm3Xw-jN1Q-Z9Bi?usp=drive_link) | [RealBlurR Sample](https://drive.google.com/file/d/12K0o9g7TX0m2urrPBHB31603i7t-ZfbH/view?usp=drive_link) |
 
 > 📌 *Please make sure the `images/` directory contains the corresponding sample images for proper rendering on GitHub.*
 
