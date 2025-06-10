@@ -94,6 +94,8 @@ python predict_RealBlur_R_test_results.py --job_name xyscannetp_realr
 
 The following table lists our released pretrained models and qualitative visual examples. All models are available from Google Drive.
 
+PS: We are still double-checking whether all released models and images match with the paper.
+
 | Dataset         | Trained On       | Model Weights                                                                 | Sample Results Preview |
 |-----------------|------------------|-------------------------------------------------------------------------------|-------------------------|
 | **GoPro**       | GoPro            | [Download](https://drive.google.com/drive/folders/10nu5WiA05Dv4q12A0XiISGMmXd6gyiYE?usp=drive_link) | [GoPro Sample](https://drive.google.com/file/d/1lQlRzjhcG_8L4Ikr2COS_qjVObhaKOZV/view?usp=drive_link) |
