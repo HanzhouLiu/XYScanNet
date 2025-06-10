@@ -1,0 +1,2 @@
+A good way to maintain the datasets in a project is to create a soft link.
+In that case, you simply set the dataset path to the current path in the config files.
