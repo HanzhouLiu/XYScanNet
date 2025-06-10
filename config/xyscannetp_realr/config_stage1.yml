@@ -1,0 +1,40 @@
+---
+experiment_desc: XYScanNet_stage1
+
+train:
+  files_a: ./datasets/realj/trainA/**/*.png
+  files_b: ./datasets/realj/trainB/**/*.png
+  size: &SIZE 256
+  crop: random
+  preload: &PRELOAD false
+  preload_size: &PRELOAD_SIZE 0
+  bounds: [0, 1]
+  scope: geometric
+
+val:
+  files_a: /scratch/user/hanzhou1996/datasets/deblur/RealBlur_J/test/testA/*.png
+  files_b: /scratch/user/hanzhou1996/datasets/deblur/RealBlur_J/test/testB/*.png
+  size: *SIZE
+  scope: None
+  crop: random
+  preload: *PRELOAD
+  preload_size: *PRELOAD_SIZE
+  bounds: [0, 1]
+
+model:
+  g_name: XYScanNetP
+  content_loss: Stripformer_Loss
+
+num_epochs: 200
+train_batches_per_epoch: 25861
+val_batches_per_epoch: 980
+batch_size: 8
+image_size: [256, 256]
+
+optimizer:
+  name: adam
+  lr: 0.0002
+scheduler:
+  name: cosine
+  start_epoch: 50
+  min_lr: 0.0000001

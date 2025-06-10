@@ -1,0 +1,41 @@
+---
+experiment_desc: XYScanNet_stage2
+
+train:
+  #/mnt/g/RESEARCH/PHD/Motion_Deblurred/datasets/GOPRO_
+  files_a: /scratch/user/hanzhou1996/datasets/deblur/GOPRO_/train/blur/**/*.png
+  files_b: /scratch/user/hanzhou1996/datasets/deblur/GOPRO_/train/sharp/**/*.png
+  size: &SIZE 320
+  crop: random
+  preload: &PRELOAD false
+  preload_size: &PRELOAD_SIZE 0
+  bounds: [0, 1]
+  scope: geometric
+
+val:
+  files_a: /scratch/user/hanzhou1996/datasets/deblur/GOPRO_/test/blur/**/*.png
+  files_b: /scratch/user/hanzhou1996/datasets/deblur/GOPRO_/test/sharp/**/*.png
+  size: *SIZE
+  scope: None
+  crop: random
+  preload: *PRELOAD
+  preload_size: *PRELOAD_SIZE
+  bounds: [0, 1]
+
+model:
+  g_name: XYScanNetP
+  content_loss: Stripformer_Loss
+
+num_epochs: 4000
+train_batches_per_epoch: 2103
+val_batches_per_epoch: 1111
+batch_size: 8
+image_size: [320, 320]
+
+optimizer:
+  name: adam
+  lr: 0.00015
+scheduler:
+  name: cosine
+  start_epoch: 50
+  min_lr: 0.0000001
