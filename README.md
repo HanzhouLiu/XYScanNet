@@ -48,7 +48,7 @@ python train_XYScanNet_stage1.py --job_name xyscannetp_gopro
 python train_XYScanNet_stage2.py --job_name xyscannetp_gopro
 ```
 
-📄 **Training Log:** [GoPro]() (can be viewed with linux cat commands)
+📄 **Training Log:** [GoPro]() (can be viewed with linux ```cat``` commands)
 
 
 ## Training on RealBlur
