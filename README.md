@@ -94,7 +94,7 @@ python predict_RealBlur_R_test_results.py --job_name xyscannetp_realr
 
 The following table lists our released pretrained models and qualitative visual examples. All models are available from Google Drive.
 
-PS: We have trained multiple versions of XYScanNet. We are still double-checking whether the released models and images match with the paper results.
+**PS: We have trained multiple versions of XYScanNet. We are still double-checking whether the released models and images match with the paper results.**
 
 | Dataset         | Trained On       | Model Weights                                                                 | Sample Results Preview |
 |-----------------|------------------|-------------------------------------------------------------------------------|-------------------------|
