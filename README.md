@@ -48,14 +48,14 @@ python train_XYScanNet_stage1.py --job_name xyscannetp_gopro
 python train_XYScanNet_stage2.py --job_name xyscannetp_gopro
 ```
 
-📄 **Training Log:** [GoPro]() (can be viewed with linux ```cat``` commands)
+📄 **Training Log:** [GoPro](https://drive.google.com/drive/folders/1hxyuTzYumivNFhsTBemWLM7shFQ-tdlK?usp=drive_link) (can be viewed with linux ```cat``` commands)
 
 
 ## Training on RealBlur
 I forgot the training details on RealBlur datasets. As much as I can remember, I used the gopro-trained model (final .pth in stage 1) and fine-tuned it based on the provided config file.
 
-📄 **Training Log:** [RealBlur_J]()
-📄 **Training Log:** [RealBlur_R]()
+📄 **Training Log:** [RealBlur_J](https://drive.google.com/drive/folders/1FdxXs95c-kTjNp9jlm-fQ6ayPpwH5kZv?usp=drive_link)
+📄 **Training Log:** [RealBlur_R](https://drive.google.com/drive/folders/1ci-D0slKuv3cVX_HOK0_aUj7Gck4fSsf?usp=drive_link)
 
 ---
 
