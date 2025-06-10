@@ -47,13 +47,11 @@ The following table lists our released pretrained models and qualitative visual 
 ## ✅ TODO
 
 - [x] 🔓 **Release Pretrained Models**
+- [x] 📊 **Release Test Images**
 - [ ] 🔄 **Extend to Other Restoration Tasks**
   - [ ] Image Denoising
   - [ ] Super-Resolution
   - [ ] Compression Artifact Removal
-- [ ] 📊 **Complexity Analysis**
-  - [ ] FLOPs and Runtime Benchmarks
-  - [ ] Model Scaling Trend
 
 ---
 
