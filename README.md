@@ -125,9 +125,11 @@ The following table lists our released pretrained models and qualitative visual 
 If you find our work useful, please consider citing us:
 
 ```bibtex
-@article{liu2024xyscannet,
-  title={XYScanNet: An Interpretable State Space Model for Perceptual Image Deblurring},
-  author={Liu, Hanzhou and Liu, Chengkai and Xu, Jiacong and Jiang, Peng and Lu, Mi},
-  journal={arXiv preprint arXiv:2412.10338},
-  year={2024}
+@InProceedings{Liu_2025_CVPR,
+    author    = {Liu, Hanzhou and Liu, Chengkai and Xu, Jiacong and Jiang, Peng and Lu, Mi},
+    title     = {XYScanNet: A State Space Model for Single Image Deblurring},
+    booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR) Workshops},
+    month     = {June},
+    year      = {2025},
+    pages     = {779-789}
 }
