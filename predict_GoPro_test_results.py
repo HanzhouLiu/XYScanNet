@@ -29,9 +29,9 @@ if __name__ == '__main__':
     args = get_args()
     #with open(os.path.join('config/', args.job_name, 'config_stage2.yaml'), 'r') as cfg:  # change the CFG name to test different models: pretrained, gopro, refined, stage1, stage2
     #    config = yaml.safe_load(cfg)
-    with open(os.path.join('config/', args.job_name, 'config_pretrained.yaml'), 'r') as cfg:  # change the CFG name to test different models: pretrained, gopro, refined, stage1, stage2
+    with open(os.path.join('config/', args.job_name, 'config_stage2.yaml'), 'r') as cfg:  # change the CFG name to test different models: pretrained, gopro, refined, stage1, stage2
         config = yaml.safe_load(cfg)
-    blur_path = '/scratch/user/hanzhou1996/datasets/deblur/GOPRO_/test/blur'
+    blur_path = '/mnt/g/RESEARCH/PHD/Motion_Deblurred/datasets/GOPRO_/test/testA'
     out_path = os.path.join('results', args.job_name, 'images')
     weights_path = os.path.join('results', args.job_name, 'models', 'best_{}.pth'.format(config['experiment_desc']))  # change the model name to test different phases: final/best
     if not os.path.isdir(out_path):
