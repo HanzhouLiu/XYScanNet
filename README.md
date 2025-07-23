@@ -72,6 +72,7 @@ I forgot the training details on RealBlur datasets. As much as I can remember, I
 **For testing on GoPro dataset** </br>
 * Create folders with a structure results/xyscannetp_gopro/models, where models is the folder that saves the network weights.
 * Download "[GoPro](https://drive.google.com/file/d/1Fp0MuEwFlzT_NKAFjr3SpuQl3Sm0cFYA/view?usp=sharing)" full dataset or test set into './datasets' (For example: './datasets/GoPro/test') </br>
+* Change the dataset path in predict_GoPro_test_results.py line 34.
 * Run the following command
 ```
 python predict_GoPro_test_results.py --job_name xyscannetp_gopro
