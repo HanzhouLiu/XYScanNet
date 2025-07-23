@@ -710,3 +710,28 @@ class XYScanNet(nn.Module):
 
 
         return out_dec_level1, out_dec_level1_decomp1, None
+    
+def count_parameters(model):
+    total = sum(p.numel() for p in model.parameters())
+    trainable = sum(p.numel() for p in model.parameters() if p.requires_grad)
+    print(f"Total parameters: {total:,}")
+    print(f"Trainable parameters: {trainable:,}")
+
+
+def main():
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    model = XYScanNet().to(device)
+
+    print("Model architecture:\n")
+    print(model)
+
+    count_parameters(model)
+
+    # Optionally test with a dummy input
+    dummy_input = torch.randn(1, 3, 256, 256).to(device)
+    output, _, _ = model(dummy_input)
+    print(f"Output shape: {output.shape}")
+
+
+if __name__ == "__main__":
+    main()
