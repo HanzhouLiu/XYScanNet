@@ -18,7 +18,7 @@ def get_args():
 
 if __name__ == '__main__':
     args = get_args()
-    with open(os.path.join('config/', args.job_name, 'config_pretrained.yaml')) as cfg:  # change the yaml file to config_pretrained if ablation
+    with open(os.path.join('config/', args.job_name, 'config_stage2.yaml')) as cfg:  # change the yaml file to config_pretrained if ablation
     #with open(os.path.join('config/', args.job_name, 'config_stage2.yaml')) as cfg:  # change the yaml file to config_pretrained if ablation
         config = yaml.safe_load(cfg)
     blur_path = '/scratch/user/hanzhou1996/datasets/deblur/HIDE/test/testA/'
