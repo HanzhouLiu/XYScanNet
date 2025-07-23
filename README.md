@@ -70,18 +70,21 @@ I forgot the training details on RealBlur datasets. As much as I can remember, I
 
 ## Testing
 **For testing on GoPro dataset** </br>
+* Create folders with a structure results/xyscannetp_gopro/models, where models is the folder that saves the network weights.
 * Download "[GoPro](https://drive.google.com/file/d/1Fp0MuEwFlzT_NKAFjr3SpuQl3Sm0cFYA/view?usp=sharing)" full dataset or test set into './datasets' (For example: './datasets/GoPro/test') </br>
 * Run the following command
 ```
 python predict_GoPro_test_results.py --job_name xyscannetp_gopro
 ```
 **For testing on HIDE dataset** </br>
+* Create folders with a structure results/xyscannetp_hide/models, where models is the folder that saves the network weights.
 * Download "[HIDE](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" into './datasets' </br>
 * Run the following command
 ```
 python predict_HIDE_results.py --job_name xyscannetp_gopro
 ```
 **For testing on RealBlur test sets** </br>
+* Create folders with a structure results/xyscannetp_realj(or realr)/models, where models is the folder that saves the network weights.
 * Download "[RealBlur_J](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" and "[RealBlur_R](https://drive.google.com/drive/folders/1BdV2l7A5MRXLWszGonMxR88eV27geb_n?usp=sharing)" into './datasets' </br>
 * Run the following command
 ```
