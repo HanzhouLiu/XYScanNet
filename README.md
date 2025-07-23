@@ -1,6 +1,6 @@
 # XYScanNet: A State Space Model for Single Image Deblurring
 
-[![NTIRE](https://img.shields.io/badge/CVPR--NTIRE%202025-Accepted-brightgreen.svg)](https://arxiv.org/abs/2412.10338)
+[![NTIRE](https://img.shields.io/badge/CVPR--NTIRE%202025-Accepted-brightgreen.svg)](https://openaccess.thecvf.com/content/CVPR2025W/NTIRE/papers/Liu_XYScanNet_A_State_Space_Model_for_Single_Image_Deblurring_CVPRW_2025_paper.pdf)
 [![arXiv](https://img.shields.io/badge/arXiv-2412.10338-b31b1b.svg)](https://arxiv.org/abs/2412.10338)
 
 Official implementation of our **CVPR Workshop NTIRE 2025** accepted paper:
@@ -28,9 +28,10 @@ To overcome these issues, we propose a novel slice-and-scan strategy that altern
 
 ---
 ## Environment Setup
-To do!
-Please refer to 
-[Stripformer](https://github.com/pp00704831/Stripformer-ECCV-2022-) and [DeblurDiNAT](https://github.com/HanzhouLiu/DeblurDiNAT).
+conda create -n XYScanNet python=3.8 -y
+conda activate XYScanNet
+conda install pytorch==2.0.0 torchvision==0.15.0 pytorch-cuda=11.8 -c pytorch -c nvidia
+pip install -r requirements.txt
 
 ---
 
@@ -41,14 +42,14 @@ for example: './datasets/GoPro'. Note: we say the blur images is A and the sharp
 Download "[VGG19 Pretrained Weights](https://drive.google.com/file/d/1r2_clZ02-ai6xM7EOHW9APqY9IxkPYsS/view?usp=drive_link)" into './models',
 which is used to calculate ContrastLoss.  </br>
 
-**We train our XYScanNet in two stages:** </br>
-* We pre-train XYScanNet for 4000 epochs with patch size 252x252 </br> 
+**We train our XYScanNetPlus in two stages:** </br>
+* We pre-train XYScanNetPlus for 4000 epochs with patch size 252x252 </br> 
 * Run the following command 
 ```
 python train_XYScanNet_stage1.py --job_name xyscannetp_gopro
 ```
 
-* After 4000 epochs, we keep training XYScanNet for 4000 epochs with patch size 320x320 </br>
+* After 4000 epochs, we keep training XYScanNetPlus for 4000 epochs with patch size 320x320 </br>
 * Run the following command 
 ```
 python train_XYScanNet_stage2.py --job_name xyscannetp_gopro
@@ -94,7 +95,7 @@ python predict_RealBlur_R_test_results.py --job_name xyscannetp_realr
 
 The following table lists our released pretrained models and qualitative visual examples. All models are available from Google Drive.
 
-**PS: We have trained multiple versions of XYScanNet. We are still double-checking whether the released models and images match with the paper results.**
+**PS: We have trained multiple versions of XYScanNetPlus. We are still double-checking whether the released models and images match with the paper results.**
 
 | Dataset         | Trained On       | Model Weights                                                                 | Sample Results Preview |
 |-----------------|------------------|-------------------------------------------------------------------------------|-------------------------|
