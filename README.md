@@ -28,10 +28,12 @@ To overcome these issues, we propose a novel slice-and-scan strategy that altern
 
 ---
 ## Environment Setup
+```
 conda create -n XYScanNet python=3.8 -y
 conda activate XYScanNet
 conda install pytorch==2.0.0 torchvision==0.15.0 pytorch-cuda=11.8 -c pytorch -c nvidia
 pip install -r requirements.txt
+```
 
 ---
 
