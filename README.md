@@ -118,12 +118,7 @@ The following table lists our released pretrained models and qualitative visual 
 - [x] **Release Pretrained Models**
 - [x] **Release Test Images**
 - [x] **Release Training Logs**
-- [ ] **Release Environment Setup**
-- [ ] **Double Check whether shared model versions match with the paper**
-- [ ] **Extend to Other Restoration Tasks**
-  - [ ] Image Denoising
-  - [ ] Super-Resolution
-  - [ ] Compression Artifact Removal
+- [x] **Release Environment Setup**
 
 ---
 
