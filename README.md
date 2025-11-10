@@ -2,6 +2,8 @@
 
 [![NTIRE](https://img.shields.io/badge/CVPR--NTIRE%202025-Accepted-brightgreen.svg)](https://openaccess.thecvf.com/content/CVPR2025W/NTIRE/papers/Liu_XYScanNet_A_State_Space_Model_for_Single_Image_Deblurring_CVPRW_2025_paper.pdf)
 [![arXiv](https://img.shields.io/badge/arXiv-2412.10338-b31b1b.svg)](https://arxiv.org/abs/2412.10338)
+[![Demo](https://img.shields.io/badge/🤗%20HuggingFace-Demo-orange?logo=huggingface)](https://huggingface.co/spaces/HanzhouLiu/XYScanNet_Demo)
+[![Project](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/HanzhouLiu/XYScanNet)
 
 Official implementation of our **CVPR Workshop NTIRE 2025** accepted paper:
 
